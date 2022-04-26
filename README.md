@@ -18,10 +18,26 @@
 
 ### Overview of the analysis: Explain the purpose of this analysis.
 
+I picked one of the Amazon beauty datasets and used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, I uses PySpark to determine if there is any bias toward favorable reviews from Vine members in your dataset. 
+
 ### Results: Using bulleted lists and images of DataFrames as support, address the following questions:
 
-- How many Vine reviews and non-Vine reviews were there?
-- How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-- What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+How many Vine reviews and non-Vine reviews were there?
 
-### Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+- Paid: 647 
+- Unpaid: 74,113  
+
+How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+
+- Paid: 229  
+- Unpaid: 43,217 
+
+What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+
+- Paid: 35.394126738794434  
+- Unpaid: 58.312306882733125 
+
+### Summary: 
+
+I believe this particular category is popular enough to not have to rely heavy on paid Vines. Popularity and quality of products seem to speak for themselves. Additionaly, the majority of paid reviews weren't 5-star rated, which makes me believe that they were paid for by competing companies in an attempt to smear reputation of rival products. 
+One additional analysis we can do to support my statement is to find mean, median and mode for paid and unpaid Vines. 
