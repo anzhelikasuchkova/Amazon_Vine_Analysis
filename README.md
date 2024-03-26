@@ -1,4 +1,54 @@
-# Amazon_Vine_Analysis
+# Amazon Vine Analysis
+
+## Overview
+
+This project conducts an analysis of the Amazon Vine program, which is a service that allows manufacturers and publishers to receive reviews for their products. The analysis focuses on a specific dataset containing reviews of products in the "Video Games" category. The goal is to determine if there is any bias towards favorable reviews from Vine members (who are paid for their reviews) compared to non-Vine members.
+
+## Data Source
+
+The dataset used for this analysis is sourced from the Amazon Review datasets available on the AWS public dataset repository. Specifically, the dataset contains reviews of products in the "Video Games" category.
+
+## Tools and Technologies Used
+
+- Python
+- PySpark
+- Amazon Web Services (AWS)
+
+## Methodology
+
+1. **Data Preparation**: The dataset is loaded and preprocessed using PySpark to extract relevant information such as product ratings, helpful votes, and Vine membership status.
+
+2. **Analysis**: The dataset is analyzed to compare the ratings and helpfulness of reviews between Vine and non-Vine members. Statistical metrics such as average rating and percentage of helpful votes are calculated for each group.
+
+3. **Results Interpretation**: The results of the analysis are interpreted to determine if there is any significant difference in review characteristics between Vine and non-Vine members.
+
+## Key Findings
+
+- Average rating: The average rating given by Vine members is compared to that of non-Vine members to assess any potential bias.
+- Percentage of helpful votes: The percentage of helpful votes received by reviews from Vine members is compared to that of non-Vine members to evaluate reviewer credibility.
+
+## Conclusion
+
+Based on the analysis results, conclusions are drawn regarding the presence of bias in reviews from Vine members compared to non-Vine members. Recommendations may be provided for further investigation or action based on the findings.
+
+## Repository Contents
+
+- **Data**: Contains the dataset used for the analysis.
+- **Notebooks**: Includes Jupyter notebooks containing the Python code for data preprocessing, analysis, and visualization.
+- **Results**: Contains any visualizations or summary reports generated from the analysis.
+- **References**: Includes any relevant literature or documentation used as references for the analysis.
+
+## Usage
+
+To replicate the analysis, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies (PySpark, etc.).
+3. Open and run the Jupyter notebooks in the "Notebooks" directory sequentially to preprocess the data, conduct the analysis, and generate results.
+
+## Credits
+
+The dataset used for the analysis is sourced from the Amazon Review datasets available on the AWS public dataset repository.
 
 ## Deliverable 1: Perform ETL on Amazon Product Reviews
 
